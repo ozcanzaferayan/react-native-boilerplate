@@ -1,0 +1,28 @@
+# Requirements
+
+- [ x ] Typescript
+- [ x ] Prettier
+- [ x ] Custom path aliases
+- [ x ] Environment variables
+- [ x ] Redux
+- [ x ] RTK Query
+- [ ] Navigation
+- [ ] Tests
+- [ ] Dark Theme
+- [ ] Styling (Color palette)
+- [ ] Splash
+- [ ] Localization
+- [ ] SVG
+- [ ] Fonts
+- [ ] Git: pre-commit
+- [ ] Codepush
+- [ ] Crashlytics
+- [ ] Store submission (Fastlane)
+- [ ] SQLite, Realm, Watermelon
+- [ ] Deep Linking
+- [ ] GraphQL
+- [ ] Push Notification
+- [ ] Native Modules
+- [ ] Toast Message
+- [ ] In App Purchases
+- [ ] Offline working
