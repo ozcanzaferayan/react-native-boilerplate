@@ -1,17 +1,20 @@
-import {View, Text, SafeAreaView} from 'react-native';
 import React from 'react';
+import { SafeAreaView, Text, View } from 'react-native';
+import { Provider } from 'react-redux';
+
+import { setupStore } from '@store/store';
+
 import Home from './src/home/Home';
-import Details from './src/details/Details';
-import Settings from './src/settings/Settings';
+
+const store = setupStore();
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <Home />
-      {/* <Details />
-      <Settings /> */}
-    </SafeAreaView>
+    <Provider store={store}>
+      <SafeAreaView>
+        <Home />
+      </SafeAreaView>
+    </Provider>
   );
 };
-
 export default App;

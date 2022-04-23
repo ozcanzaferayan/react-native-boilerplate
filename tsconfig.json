@@ -45,6 +45,9 @@
       "@details/*": ["./details/*"],
       "@settings/*": ["./settings/*"],
       "@lib/*": ["./lib/*"],
+      "@services/*": ["./services/*"],
+      "@config/*": ["./config/*"],
+      "@store/*": ["./store/*"],
     },
  
     

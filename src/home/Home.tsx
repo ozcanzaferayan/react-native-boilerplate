@@ -1,18 +1,27 @@
-import React, { useEffect } from 'react';
-import { Text, View } from 'react-native';
+import React from 'react';
+import { Image, Text, View } from 'react-native';
 
-import MyButton from '@common/MyButton';
-import { add } from '@lib/MyLib';
+import { useGetPokemonByNameQuery } from '@services/pokemon';
 
 const Home = () => {
-  useEffect(() => {
-    console.log(add(2, 3));
-  }, []);
+  const { data, error, isLoading } = useGetPokemonByNameQuery('bulbasaur');
+
+  if (error) {
+    return <Text>Oh no, there was an error</Text>;
+  }
+
+  if (isLoading) {
+    return <Text>Loading...</Text>;
+  }
 
   return (
     <View>
-      <Text>Home</Text>
-      <MyButton onPress={() => alert('Hello')} title="Click me" />
+      <Text>{data.species.name}</Text>
+      <Image
+        style={{ width: 200, height: 200 }}
+        source={{ uri: data.sprites.front_shiny }}
+        accessibilityLabel={data.species.name}
+      />
     </View>
   );
 };
