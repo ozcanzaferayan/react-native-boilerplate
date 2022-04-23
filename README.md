@@ -26,3 +26,5 @@
 - [ ] Toast Message
 - [ ] In App Purchases
 - [ ] Offline working
+- [ ] Reanimated 2
+- [ ] Flipper
