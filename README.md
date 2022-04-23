@@ -1,11 +1,11 @@
 # Requirements
 
-- [ x ] Typescript
-- [ x ] Prettier
-- [ x ] Custom path aliases
-- [ x ] Environment variables
-- [ x ] Redux
-- [ x ] RTK Query
+- [x] Typescript
+- [x] Prettier
+- [x] Custom path aliases
+- [x] Environment variables
+- [x] Redux
+- [x] RTK Query
 - [ ] Navigation
 - [ ] Tests
 - [ ] Dark Theme
